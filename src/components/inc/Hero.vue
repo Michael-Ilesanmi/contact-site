@@ -1,8 +1,8 @@
 <template>
   <main 
     class="bg-no-repeat bg-center bg-cover bg-[url('https://cdn.pixabay.com/photo/2023/03/06/15/45/coffee-7833769_960_720.jpg')] min-h-screen pt-24 ">
-    <div class="container grid grid-cols-2 gap-12 items-center justify-between">
-        <div class="flex flex-col justify-center items-center h-full space-y-6 text-white">
+    <div class="container flex space-x-24 items-center justify-between">
+        <div class="w-3/6 flex flex-col justify-center h-full space-y-6 text-white">
             <h2 class="font-medium text-2xl text-white">
                 Top Rated Software Development Contractors
             </h2>
@@ -13,8 +13,8 @@
                 We provide you with experienced software development contractors, exactly when you need them. Highly responsive and in your timezone.
             </p>
         </div>
-        <form @submit.prevent="false" class="bg-gray-200 py-6 px-12">
-            <h2 class="text-blue-400 text-xl font-bold text-center">
+        <form @submit.prevent="false" class="bg-[rgb(229,231,235,0.7)] py-6 px-12 w-2/6">
+            <h2 class="text-blue-600 text-xl font-bold text-center">
                 Let's connect to help you and your team.
             </h2>
             <fieldset class="flex flex-col space-y-4 font-medium my-4">
@@ -39,14 +39,22 @@
             </button>
         </form>
     </div>
-    <div class="bg-gray-900 py-4">
+    <div class="bg-gray-900 py-8 mt-16">
         <div class="container">
-            <div class="grid grid-flow-col gap-4">
-                <p>Trusted by startups and Fortune 500 companies</p>
-                <img src="https://cdn.cdnlogo.com/logos/c/72/cinema-work.svg" class="h-12 bg-transparent" alt="" />
-                <img src="https://cdn.cdnlogo.com/logos/u/54/unova.svg" class="h-12" alt="" />
-                <img src="https://cdn.cdnlogo.com/logos/u/54/unova.svg" class="h-12" alt="" />
-                <img src="https://cdn.cdnlogo.com/logos/u/54/unova.svg" class="h-12" alt="" />
+            <div class="grid grid-flow-col items-center">
+                <p class="font-semibold text-lg text-gray-400">
+                    Trusted by startups and Fortune 500 companies
+                </p>
+                <div class="grid grid-flow-col gap-8 w-fit">
+                    <img src="https://cdn.cdnlogo.com/logos/t/3/tens.svg" class="max-h-8 grayscale" alt="" />
+                    <img src="https://cdn.cdnlogo.com/logos/p/61/pinterest-2.svg" class="max-h-8 grayscale" alt="" />
+                    <img src="https://cdn.cdnlogo.com/logos/i/25/interjet-transparent.svg" class="max-h-8 grayscale" alt="" />
+                    <img src="https://cdn.cdnlogo.com/logos/s/23/shell-helix-ultra-simple.svg" class="max-h-8 grayscale" alt="" />
+                    <img src="https://cdn.cdnlogo.com/logos/y/12/youtube.svg" class="max-h-8 grayscale" alt="" />
+                    <img src="https://cdn.cdnlogo.com/logos/f/23/facebook.svg" class="max-h-8 grayscale" alt="" />
+                    <img src="https://cdn.cdnlogo.com/logos/s/35/sia-new-circle-transparent.svg" class="max-h-8 grayscale" alt="" />
+                </div>
+                
             </div>
         </div>
     </div>
