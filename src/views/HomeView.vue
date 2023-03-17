@@ -1,9 +1,11 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import NavBar from "@/components/inc/NavBar.vue";
+import Hero from "@/components/inc/Hero.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <NavBar />
+    <Hero />
   </main>
 </template>
